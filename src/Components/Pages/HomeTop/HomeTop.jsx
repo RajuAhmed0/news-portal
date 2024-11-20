@@ -17,15 +17,15 @@ const HomeTop = () => {
                     <p className='text-[#403F3F] md:text-lg text-sm font-semibold'>Match Highlights: Germany vs Spain — as it happened   !   Match Highlights: Germany vs Spain as...</p>
                 </Marquee>
             </div>
-            <div className='flex items-center justify-center'>
-                <div className='flex justify-center gap-4 text-[#706F6F] text-lg'>
+            <div className='flex items-center justify-between mt-[21px]'>
+                <div className='flex text-center md:gap-4 gap-2 text-[#706F6F] md:text-lg text-base xl:ml-[473px] lg:ml-[400px] md:ml-[260px]'>
                     <p>Home</p>
                     <p>About</p>
                     <p>Career</p>
                 </div>
                 <div className='flex gap-[9px]'>
-                    <img className='w-[41px]' src="https://i.ibb.co.com/9nsZghD/user.png" alt="" />
-                    <button className='bg-[#403F3F] text-white text-xl font-semibold px-[42.5px] py-[7px]'>Login</button>
+                    <img className='md:w-[41px] w-9 ' src="https://i.ibb.co.com/9nsZghD/user.png" alt="" />
+                    <button className='bg-[#403F3F] text-white md:text-xl text-base font-semibold md:px-[42.5px] px-5 md:py-[7px] py-1'>Login</button>
                 </div>
             </div>
         </div>
