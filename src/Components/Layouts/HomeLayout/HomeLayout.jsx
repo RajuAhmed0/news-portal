@@ -15,11 +15,11 @@ const HomeLayout = () => {
             <TopMarquee></TopMarquee>
             <TopNav></TopNav>
             <div className='flex justify-between gap-6 mt-[76px] '>
-                <div className='max-w-[267px]'>
+                <div className='w-[267px]'>
                     <HomeLeft></HomeLeft>
                 </div>
                 <Outlet></Outlet>
-                <div className='max-w-[267px]'>
+                <div className='w-[267px]'>
                     <HomeRight></HomeRight>
                 </div>
             </div>

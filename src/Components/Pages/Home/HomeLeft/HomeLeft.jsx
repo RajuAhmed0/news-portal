@@ -14,9 +14,9 @@ const HomeLeft = () => {
     }, []);
 
     return (
-        <div className='font-poppins'>
+        <div className='font-poppins '>
 
-            <div className='flex flex-col gap-[30px]'>
+            <div className='flex flex-col gap-[30px] w-full'>
                 <h2 className='text-[#403F3F] text-xl font-semibold '>All Caterogy</h2>
                 {
                     navData?.map(data => <HomeLeftNav data={data} key={data.id}></HomeLeftNav>)
