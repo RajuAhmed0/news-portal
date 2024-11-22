@@ -1,7 +1,30 @@
-import React from 'react';
 import TopNav from '../Shared/TopNav/TopNav';
+import { AuthContext } from '../../Context/Provider';
+import { useContext } from 'react';
 
 const SignUp = () => {
+    const { register } = useContext(AuthContext);
+
+    const handleRegisterBtn = (e) => {
+        e.preventDefault()
+
+        const name = e.target.name.value;
+        const photoUrl = e.target.photoUrl.value;
+        const email = e.target.email.value;
+        const password = e.target.password.value;
+        // console.log(name,photoUrl,email,password);
+
+
+        register(email, password)
+            .then(result => {
+                console.log(result.user);
+
+            })
+            .catch(err => console.log(err.message))
+
+
+    }
+
     return (
 
         <div>
@@ -10,7 +33,7 @@ const SignUp = () => {
                 <div className="bg-white rounded-[5px] p-[73px] mt-[94px] mb-[125px] w-[752px]">
                     <h1 className="text-[35px] font-semibold text-center text-[#403F3F]">Register your account</h1>
                     <div className='border my-[50px]'></div>
-                    <form className='p-[21px]'>
+                    <form onSubmit={handleRegisterBtn} className='p-[21px]'>
                         <div className="mb-4">
                             <label className="block text-gray-700 font-medium mb-2"> Your Name </label>
                             <input type="text" name="name" className="w-full bg-[#F3F3F3] px-[20px] py-[20.5px]" placeholder="Enter your name" required />

@@ -12,6 +12,7 @@ import Sports from "../Categories/Sports/Sports";
 import Entertainment from "../Categories/Entertainment/Entertainment";
 import Culture from "../Categories/Culture/Culture";
 import Arts from "../Categories/Arts/Arts";
+import Career from "../Pages/Career/Career";
 
 export const route = createBrowserRouter([
     {
@@ -61,6 +62,11 @@ export const route = createBrowserRouter([
                 path: "/about",
                 element: <About></About>
             },
+            {
+                path: "/career",
+                element: <Career></Career>
+            },
+          
             {
                 path: "/signIn",
                 element: <SignIn></SignIn>

@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const TopNav = () => {
     return (
         <div>
             <div className='flex items-center justify-between mt-[21px]'>
                 <div className='flex text-center md:gap-4 gap-2 text-[#706F6F] md:text-lg text-base xl:ml-[473px] lg:ml-[400px] md:ml-[260px]'>
-                    <p>Home</p>
-                    <p>About</p>
-                    <p>Career</p>
+                    <Link to={"/"}>Home</Link>
+                    <Link to={"/about"}>About</Link>
+                    <Link to={"/career"}>Career</Link>
                 </div>
                 <div className='flex gap-[9px]'>
                     <img className='md:w-[41px] w-9 ' src="https://i.ibb.co.com/9nsZghD/user.png" alt="" />
